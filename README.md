@@ -7,3 +7,6 @@ Similarly INRcompare program helps us to compare the values which we have been f
 
 
 Last program implies that we can access data from MS excel to read it through java.
+
+
+Finally i did Hashmap program for student results to show i can work on it.

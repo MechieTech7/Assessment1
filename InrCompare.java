@@ -1,6 +1,6 @@
 package currency;
 import java.util.*;
-public class InrCompare {
+public class Currency {
 public static void main(String[] args){
 String arr[]={"INR 6700","INR 5500","INR 800","INR 9990"};
 List<Integer> lis=new ArrayList<Integer>();

@@ -1,39 +1,16 @@
-public class InrCompare {  
-    public static void main(String[] args) {          
-
-int length;
-String sub;
-String curr;
-String v1 ="INR6700";
-String v2="INR5500";
-String v3="INR800";
-String v4="INR9990";
-
-String[] v= {v1,v2,v3,v4};
-if(v1.substring(0, 3).equals(v4.substring(0, 3))&v1.substring(0, 3).equals(v4.substring(0, 3))&v1.substring(0, 3).equals(v4.substring(0, 3))) {
-System.out.println("All are same currencies");
-
-     } else {
-System.out.println("there is a diff currencies");
+package currency;
+import java.util.*;
+public class InrCompare {
+public static void main(String[] args){
+String arr[]={"INR 6700","INR 5500","INR 800","INR 9990"};
+List<Integer> lis=new ArrayList<Integer>();
+for(int i=0;i<arr.length;i++)
+{
+lis.add(Integer.parseInt(arr[i].replaceAll("INR ","")));
 }
-curr=(String) v1.subSequence(0,3);
-int num[]=new int[4];
-for(int i=0;i<4;i++) {
-length=v[i].length();
-sub=v[i].substring(3,length);
-num[i]=Integer.parseInt(sub);
+Collections.sort(lis);
+System.out.println("Minimum Value is :"+lis.get(0));
 }
-int minvalue=num[0];
-for(int j=1;j<4;j++) {
-if(num[j]<minvalue) {
-minvalue=num[j];
 }
-
-}
-
-System.out.println("the Least value is: " +curr+" "+minvalue);
-}}
-
-
 
  
